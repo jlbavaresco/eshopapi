@@ -1,0 +1,342 @@
+{
+	"info": {
+		"_postman_id": "e8defb17-288d-4605-a8b5-66147a3f9326",
+		"name": "eshop_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10292792"
+	},
+	"item": [
+		{
+			"name": "get categorias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3003/categoria",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add categoria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n        \"codigo\": 2,\n        \"nome\": \"Eletrodomésticos\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/categoria",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update categoria",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"codigo\": 3,\n        \"nome\": \"Eletrodomésticos\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/categoria",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete categoria",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3003/categoria/4",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"categoria",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete categoria",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3003/categoria/3",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"categoria",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get produtos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3003/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"codigo\": 1,\n        \"nome\": \"Mouse USB\",\n        \"descricao\": \"Mouse USB\",\n        \"quantidade_estoque\": 20,\n        \"ativo\": true,\n        \"valor\": \"60.00\",\n        \"data_cadastro\": \"2023-07-11\",\n        \"categoria\": 1,\n        \"categoria_nome\": \"Eletrônicos\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update produto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"codigo\": 8,\n        \"nome\": \"Mouse USB teste\",\n        \"descricao\": \"Mouse USB\",\n        \"quantidade_estoque\": 20,\n        \"ativo\": true,\n        \"valor\": \"60.00\",\n        \"data_cadastro\": \"2023-07-11\",\n        \"categoria\": 1,\n        \"categoria_nome\": \"\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get produto por codigo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3003/produto/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"produto",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete produto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3003/produto/8",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"produto",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get avaliacoes produto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3003/avaliacao/produto/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"avaliacao",
+						"produto",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add avaliacao",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"codigo\": 1,\n        \"autor\": \"Jorge\",\n        \"email\": \"jorgebavaresco@ifsul.edu.br\",\n        \"texto\": \"Mouse muito preciso\",\n        \"nota\": 5,\n        \"data\": \"2023-07-11\",\n        \"produto\": 1\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/avaliacao",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"avaliacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update avaliacao",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"codigo\": 2,\n        \"autor\": \"Jorge\",\n        \"email\": \"jorgebavaresco@ifsul.edu.br\",\n        \"texto\": \"Mouse muito preciso teste\",\n        \"nota\": 5,\n        \"data\": \"2023-07-11\",\n        \"produto\": 1\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/avaliacao",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"avaliacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get avaliacao por codigo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3003/avaliacao/5",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"avaliacao",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete avaliação",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3003/avaliacao/4",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"avaliacao",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

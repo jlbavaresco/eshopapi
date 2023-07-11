@@ -44,4 +44,13 @@ values ('Mouse USB','Mouse USB', 20, true, 60.0, current_date,1),
 insert into avaliacoes (autor, email, texto, nota, data, produto) 
 values  ('Jorge', 'jorgebavaresco@ifsul.edu.br','Mouse muito preciso', 5, current_date, 1);
 
+
+-- consultas
+
+select p.codigo as codigo, p.nome as nome, p.descricao as descricao, p.quantidade_estoque as quantidade_estoque, 
+p.ativo as ativo, p.valor as valor, p.data_cadastro as data_cadastro, p.categoria as categoria, c.nome as categoria_nome
+from produtos p
+join categorias c on p.categoria = c.codigo
+order by p.codigo;
+
 select * from avaliacoes;
