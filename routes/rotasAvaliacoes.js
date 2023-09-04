@@ -2,6 +2,8 @@ const { Router } = require('express');
 
 const { getAvaliacoes, addAvaliacao, updateAvaliacao, deleteAvaliacao, getAvaliacaoPorCodigo } = require('../controllers/avaliacaoController');
 
+const { verificaJWT } = require('../controllers/segurancaController');
+
 const rotasAvaliacoes = new Router();
 
 rotasAvaliacoes.route('/avaliacao/produto/:codigoproduto')  
@@ -9,10 +11,10 @@ rotasAvaliacoes.route('/avaliacao/produto/:codigoproduto')
 
 rotasAvaliacoes.route('/avaliacao')   
    .post(addAvaliacao)
-   .put(updateAvaliacao)
+   .put(verificaJWT, updateAvaliacao)
 
 rotasAvaliacoes.route('/avaliacao/:codigo')
    .get(getAvaliacaoPorCodigo)
-   .delete(deleteAvaliacao)
+   .delete(verificaJWT, deleteAvaliacao)
 
 module.exports = { rotasAvaliacoes };

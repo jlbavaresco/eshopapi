@@ -28,7 +28,13 @@
 			"name": "add categoria",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiam9yZ2ViYXZhcmVzY29AaWZzdWwuZWR1LmJyIiwidGlwbyI6IkEiLCJ0ZWxlZm9uZSI6Iig1NCk5OTk4NC00MzQ4Iiwibm9tZSI6IkpvcmdlIEJhdmFyZXNjbyJ9LCJpYXQiOjE2OTM4MzM2NzgsImV4cCI6MTY5MzgzMzk3OH0.Ty0xY6s6oyYN-rteHvNyHVvgThzU9sQnt97B05Gu2z8",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "  {\n        \"codigo\": 2,\n        \"nome\": \"Eletrodomésticos\"\n    }",
@@ -55,7 +61,13 @@
 			"name": "update categoria",
 			"request": {
 				"method": "PUT",
-				"header": [],
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiam9yZ2ViYXZhcmVzY29AaWZzdWwuZWR1LmJyIiwidGlwbyI6IkEiLCJ0ZWxlZm9uZSI6Iig1NCk5OTk4NC00MzQ4Iiwibm9tZSI6IkpvcmdlIEJhdmFyZXNjbyJ9LCJpYXQiOjE2OTM4MzM2NzgsImV4cCI6MTY5MzgzMzk3OH0.Ty0xY6s6oyYN-rteHvNyHVvgThzU9sQnt97B05Gu2z8",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\n        \"codigo\": 3,\n        \"nome\": \"Eletrodomésticos\"\n    }",
@@ -82,7 +94,13 @@
 			"name": "delete categoria",
 			"request": {
 				"method": "DELETE",
-				"header": [],
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiam9yZ2ViYXZhcmVzY29AaWZzdWwuZWR1LmJyIiwidGlwbyI6IkEiLCJ0ZWxlZm9uZSI6Iig1NCk5OTk4NC00MzQ4Iiwibm9tZSI6IkpvcmdlIEJhdmFyZXNjbyJ9LCJpYXQiOjE2OTM4MzM2NzgsImV4cCI6MTY5MzgzMzk3OH0.Ty0xY6s6oyYN-rteHvNyHVvgThzU9sQnt97B05Gu2z8",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "localhost:3003/categoria/4",
 					"host": [
@@ -138,7 +156,13 @@
 			"name": "add produto",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiam9yZ2ViYXZhcmVzY29AaWZzdWwuZWR1LmJyIiwidGlwbyI6IkEiLCJ0ZWxlZm9uZSI6Iig1NCk5OTk4NC00MzQ4Iiwibm9tZSI6IkpvcmdlIEJhdmFyZXNjbyJ9LCJpYXQiOjE2OTM4MzM2NzgsImV4cCI6MTY5MzgzMzk3OH0.Ty0xY6s6oyYN-rteHvNyHVvgThzU9sQnt97B05Gu2z8",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": " {\n        \"codigo\": 1,\n        \"nome\": \"Mouse USB\",\n        \"descricao\": \"Mouse USB\",\n        \"quantidade_estoque\": 20,\n        \"ativo\": true,\n        \"valor\": \"60.00\",\n        \"data_cadastro\": \"2023-07-11\",\n        \"categoria\": 1,\n        \"categoria_nome\": \"Eletrônicos\"\n    }",
@@ -165,7 +189,13 @@
 			"name": "update produto",
 			"request": {
 				"method": "PUT",
-				"header": [],
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiam9yZ2ViYXZhcmVzY29AaWZzdWwuZWR1LmJyIiwidGlwbyI6IkEiLCJ0ZWxlZm9uZSI6Iig1NCk5OTk4NC00MzQ4Iiwibm9tZSI6IkpvcmdlIEJhdmFyZXNjbyJ9LCJpYXQiOjE2OTM4MzM2NzgsImV4cCI6MTY5MzgzMzk3OH0.Ty0xY6s6oyYN-rteHvNyHVvgThzU9sQnt97B05Gu2z8",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\n        \"codigo\": 8,\n        \"nome\": \"Mouse USB teste\",\n        \"descricao\": \"Mouse USB\",\n        \"quantidade_estoque\": 20,\n        \"ativo\": true,\n        \"valor\": \"60.00\",\n        \"data_cadastro\": \"2023-07-11\",\n        \"categoria\": 1,\n        \"categoria_nome\": \"\"\n    }",
@@ -211,7 +241,13 @@
 			"name": "delete produto",
 			"request": {
 				"method": "DELETE",
-				"header": [],
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiam9yZ2ViYXZhcmVzY29AaWZzdWwuZWR1LmJyIiwidGlwbyI6IkEiLCJ0ZWxlZm9uZSI6Iig1NCk5OTk4NC00MzQ4Iiwibm9tZSI6IkpvcmdlIEJhdmFyZXNjbyJ9LCJpYXQiOjE2OTM4MzM2NzgsImV4cCI6MTY5MzgzMzk3OH0.Ty0xY6s6oyYN-rteHvNyHVvgThzU9sQnt97B05Gu2z8",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "localhost:3003/produto/8",
 					"host": [
@@ -277,7 +313,13 @@
 			"name": "update avaliacao",
 			"request": {
 				"method": "PUT",
-				"header": [],
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiam9yZ2ViYXZhcmVzY29AaWZzdWwuZWR1LmJyIiwidGlwbyI6IkEiLCJ0ZWxlZm9uZSI6Iig1NCk5OTk4NC00MzQ4Iiwibm9tZSI6IkpvcmdlIEJhdmFyZXNjbyJ9LCJpYXQiOjE2OTM4MzM2NzgsImV4cCI6MTY5MzgzMzk3OH0.Ty0xY6s6oyYN-rteHvNyHVvgThzU9sQnt97B05Gu2z8",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": " {\n        \"codigo\": 2,\n        \"autor\": \"Jorge\",\n        \"email\": \"jorgebavaresco@ifsul.edu.br\",\n        \"texto\": \"Mouse muito preciso teste\",\n        \"nota\": 5,\n        \"data\": \"2023-07-11\",\n        \"produto\": 1\n    }",
@@ -323,7 +365,13 @@
 			"name": "delete avaliação",
 			"request": {
 				"method": "DELETE",
-				"header": [],
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiam9yZ2ViYXZhcmVzY29AaWZzdWwuZWR1LmJyIiwidGlwbyI6IkEiLCJ0ZWxlZm9uZSI6Iig1NCk5OTk4NC00MzQ4Iiwibm9tZSI6IkpvcmdlIEJhdmFyZXNjbyJ9LCJpYXQiOjE2OTM4MzM2NzgsImV4cCI6MTY5MzgzMzk3OH0.Ty0xY6s6oyYN-rteHvNyHVvgThzU9sQnt97B05Gu2z8",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "localhost:3003/avaliacao/4",
 					"host": [
@@ -333,6 +381,317 @@
 					"path": [
 						"avaliacao",
 						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Imagem por ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var template = `",
+							"<img src=\"{{response}}\" alt=\"Image\">",
+							"`;",
+							"",
+							"function constructVisualizerPayload() {",
+							"    return { response: pm.response.text() }",
+							"}",
+							"",
+							"pm.visualizer.set(template, constructVisualizerPayload());"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/imagem/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"imagem",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/imagem/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"imagem",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "raw",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "undefined"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 22 Aug 2023 18:18:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/imagem/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"imagem",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "raw",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/octet-stream"
+						},
+						{
+							"key": "Content-Length",
+							"value": "31"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1f-BL7HiDuJllHkfg+VqMwWzApmNKs\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 22 Aug 2023 18:30:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "/home/jorge/Downloads/mouse.jpg"
+				}
+			]
+		},
+		{
+			"name": "enviar imagem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome",
+							"value": "teste",
+							"type": "text"
+						},
+						{
+							"key": "descricao",
+							"value": "teste",
+							"type": "text"
+						},
+						{
+							"key": "arquivo",
+							"type": "file",
+							"src": "/home/jorge/Downloads/imagens/mouse.jpg"
+						},
+						{
+							"key": "produto",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3003/imagem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"imagem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"jorgebavaresco@ifsul.edu.br\",\"senha\":\"123456\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"login"
 					]
 				}
 			},
